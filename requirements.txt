@@ -1,8 +1,7 @@
 Django==5.2.5
 djangorestframework==4.0.0
 gunicorn==22.1.0
-psycopg2-binary==2.9.9          # PostgreSQL DB driver, जर PostgreSQL वापरत असाल
-mysqlclient==2.3.1               # MySQL DB driver, जर MySQL वापरत असाल
+mysqlclient==2.3.1
 requests==2.32.0
-Pillow==10.1.0                   # Image handling, optional
-whitenoise==7.1.0                # Static files serving on Render
+Pillow==10.1.0
+whitenoise==7.1.0
