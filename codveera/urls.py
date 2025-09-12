@@ -1,4 +1,4 @@
-"""
+https://github.com/Ashish1233-code/codveera/settings"""
 URL configuration for codveera project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -20,6 +20,6 @@ from cod import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
+    path('',views.home,name="home),
     path('saveform',views.form,name="saveform")
 ]
