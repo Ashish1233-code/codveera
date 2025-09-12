@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codveera Softwares</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="flex items-center justify-between px-8 py-4 bg-gray-800/40 backdrop-blur-md fixed w-full z-50 border-b border-white/10">
+    <h1 class="text-2xl font-extrabold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+      Codveera
+    </h1>
+    <nav class="hidden md:flex space-x-8 text-lg">
+      <a href="#" class="relative group">Home
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all group-hover:w-full"></span>
+      </a>
+      <a href="#services" class="relative group">Services
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all group-hover:w-full"></span>
+      </a>
+      <a href="#portfolio" class="relative group">Portfolio
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all group-hover:w-full"></span>
+      </a>
+      <a href="#about" class="relative group">About
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-indigo-400 transition-all group-hover:w-full"></span>
+      </a>
+      <a href="#contact"
+         class="px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 shadow-lg shadow-indigo-500/30 
+                hover:shadow-indigo-400/60 hover:scale-105 transition-all font-semibold">
+        Contact
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center flex-grow text-center px-6 relative overflow-hidden pt-20" style="height: 700px;">
+    <div class="absolute top-10 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-pulse"></div>
+    <div class="absolute bottom-20 right-10 w-72 h-72 bg-indigo-500 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-pulse"></div>
+
+    <div class="z-10 space-y-6 max-w-3xl">
+      <h1 id="welcome" class="text-5xl md:text-7xl font-extrabold tracking-wide opacity-0 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent drop-shadow-lg">
+        Welcome to Codveera Softwares
+      </h1>
+      <h2 id="tagline" class="text-xl md:text-3xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient relative inline-block">
+        Code the Future, Deliver Smart and Real
+      </h2>
+       <div class="flex flex-wrap gap-6 justify-center mt-10">
+  <!-- Get Started Button -->
+  <a href="#services" class="relative px-8 py-3 rounded-2xl font-semibold text-lg 
+            bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 
+            shadow-lg shadow-purple-500/30 hover:shadow-purple-400/60 
+            hover:scale-105 transition-all overflow-hidden flex items-center gap-2">
+    <i class="fa-solid fa-rocket text-white text-lg"></i>
+    <span class="relative z-10">Get Started</span>
+  </a>
+
+  <!-- Contact Us Button -->
+  <a href="#contact" class="px-8 py-3 rounded-2xl font-semibold text-lg backdrop-blur-md bg-white/10 border border-white/20 
+            hover:border-pink-400 hover:bg-pink-500/20 shadow-lg hover:shadow-pink-400/40 transition-all flex items-center gap-2">
+    <i class="fa-solid fa-envelope text-white text-lg"></i>
+    <span>Contact Us</span>
+  </a>
+</div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="relative py-20 bg-gray-800/50 backdrop-blur-lg">
+    <div class="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center gap-12">
+      
+      <!-- Image -->
+      <div id="about-img" class="flex-1 flex justify-center opacity-0">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" 
+             alt="Developer Working" 
+             class="rounded-3xl shadow-2xl w-80 md:w-96 border-4 border-indigo-400/30">
+      </div>
+      
+      <!-- Content -->
+      <div id="about-text" class="flex-1 space-y-6 opacity-0">
+        <h2 class="text-4xl md:text-5xl font-extrabold">
+          About <span class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Codveera Softwares</span>
+        </h2>
+        <p class="text-gray-300 text-lg leading-relaxed">
+          We are a team of passionate <span class="text-indigo-400 font-semibold">developers</span> & <span class="text-pink-400 font-semibold">creators</span> building next-gen web solutions.  
+          With over <span class="text-purple-400 font-bold">1 years of expertise</span>, we deliver scalable, secure, and smart digital products.
+        </p>
+        <ul class="space-y-3 text-gray-200">
+          <li> Expert in <span class="text-indigo-400 font-semibold">Django & React</span></li>
+          <li> Strong focus on <span class="text-pink-400 font-semibold">API Integrations</span> & <span class="text-purple-400 font-semibold">Cloud Hosting</span></li>
+          <li> Trusted by <span class="text-indigo-300 font-semibold">startups</span> & <span class="text-pink-300 font-semibold">agencies</span> worldwide</li>
+        </ul>
+        <a href="#portfolio"
+           class="inline-block mt-6 px-6 py-3 rounded-2xl font-semibold bg-gradient-to-r from-indigo-500 to-pink-500 
+                  hover:scale-105 transition shadow-lg shadow-indigo-500/30">
+          View Portfolio →
+        </a>
+      </div>
+    </div>
+  </section>
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6 md:px-12 lg:px-20">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent mb-12">
+      Our Services
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Service Card 1 -->
+      <div class="service-card bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-indigo-500/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-indigo-400">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Web Development</h3>
+        <p class="text-gray-300">Full-stack websites & web apps with Django & React.</p>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-pink-500/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-pink-400">
+          <i class="fa-solid fa-link"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">API Integration</h3>
+        <p class="text-gray-300">Seamless API connections for apps, payment gateways & services.</p>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-purple-500/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-purple-400">
+          <i class="fa-solid fa-cloud"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Cloud Hosting</h3>
+        <p class="text-gray-300">Deploy & maintain websites on Render, AWS & cloud platforms.</p>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-blue-500/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-blue-400">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">E-commerce Solutions</h3>
+        <p class="text-gray-300">Custom e-commerce sites with cart, checkout, and admin panel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- GSAP Scroll Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate each service card on scroll
+  document.querySelectorAll('.service-card').forEach(card => {
+    gsap.from(card, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: card,
+        start: "top 90%"
+      }
+    });
+  });
+</script>
+<!-- Portfolio Section --><!-- Portfolio Section -->
+<section id="portfolio" class="py-20 bg-gray-800/60 backdrop-blur-md">
+  <div class="container mx-auto px-6 md:px-12 lg:px-20">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent mb-12">
+      Portfolio
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Portfolio Item 1 -->
+      <a href="#"  class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg cursor-pointer block bg-gray-900/50">
+        <img src="https://www.qualityzoneinfotech.com/assets/img/E-Commerce.jpg" alt="Project 1" class="w-full h-64 object-cover rounded-2xl transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/70 opacity-0 flex items-center justify-center transition-all duration-500">
+          <p class="text-white text-lg font-semibold opacity-0">E-commerce Web App</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 2 -->
+      <a href="#"  class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg cursor-pointer block bg-gray-900/50">
+        <img src="https://www.slidegeeks.com/media/catalog/product/cache/1280x720/A/P/API_Integration_Software_Development_Dashboard_Related_To_Application_Sample_PDF_Slide_1.jpg" alt="Project 2" class="w-full h-64 object-cover rounded-2xl transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/70 opacity-0 flex items-center justify-center transition-all duration-500">
+          <p class="text-white text-lg font-semibold opacity-0">API Integration Dashboard</p>
+        </div>
+      </a>
+
+      <!-- Portfolio Item 3 -->
+      <a href="#"  class="portfolio-item relative overflow-hidden rounded-2xl shadow-lg cursor-pointer block bg-gray-900/50">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Project 3" class="w-full h-64 object-cover rounded-2xl transition-transform duration-500">
+        <div class="absolute inset-0 bg-black/70 opacity-0 flex items-center justify-center transition-all duration-500">
+          <p class="text-white text-lg font-semibold opacity-0">Custom Web Solutions</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- GSAP Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate Portfolio Items on Scroll
+  document.querySelectorAll('.portfolio-item').forEach((item, index) => {
+    const overlay = item.querySelector('div');
+    const text = overlay.querySelector('p');
+
+    // Scroll-triggered fade-in and slide-up
+    gsap.from(item, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out",
+      delay: index * 0.2,
+      scrollTrigger: {
+        trigger: item,
+        start: "top 90%"
+      }
+    });
+
+    // Hover animations
+    item.addEventListener('mouseenter', () => {
+      gsap.to(item.querySelector('img'), { scale: 1.1, duration: 0.5, ease: "power2.out" });
+      gsap.to(overlay, { opacity: 1, duration: 0.5 });
+      gsap.to(text, { opacity: 1, y: 0, duration: 0.5 });
+    });
+
+    item.addEventListener('mouseleave', () => {
+      gsap.to(item.querySelector('img'), { scale: 1, duration: 0.5, ease: "power2.out" });
+      gsap.to(overlay, { opacity: 0, duration: 0.5 });
+      gsap.to(text, { opacity: 0, y: 20, duration: 0.5 });
+    });
+  });
+</script>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 bg-gray-900/60 backdrop-blur-md">
+  <div class="container mx-auto px-6 md:px-12 lg:px-20">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">
+      My Skills
+    </h2>
+
+   <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <!-- Skill Card -->
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-indigo-500/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-indigo-400">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">HTML</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-indigo-500 rounded-full w-95 skill-bar"></div>
+        </div>
+      </div>
+
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-pink-500/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-pink-400">
+          <i class="fa-brands fa-css3-alt"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">CSS / Bootstrap</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-pink-500 rounded-full w-90 skill-bar"></div>
+        </div>
+      </div>
+
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-blue-500/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-blue-400">
+          <i class="fa-brands fa-js-square"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">JavaScript</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-yellow-400 rounded-full w-85 skill-bar"></div>
+        </div>
+      </div>
+
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-cyan-400/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-cyan-400">
+          <i class="fa-brands fa-react"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">React</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-cyan-400 rounded-full w-85 skill-bar"></div>
+        </div>
+      </div>
+
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-purple-400/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-purple-400">
+          <i class="fa-brands fa-python"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Python</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-purple-500 rounded-full w-90 skill-bar"></div>
+        </div>
+      </div>
+
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-green-400/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-green-400">
+          <i class="fa-brands fa-django"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Django</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-green-400 rounded-full w-85 skill-bar"></div>
+        </div>
+      </div>
+
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-yellow-400/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-yellow-400">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">MySQL</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-yellow-400 rounded-full w-85 skill-bar"></div>
+        </div>
+      </div>
+
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-pink-400/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-pink-400">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">REST API</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-pink-500 rounded-full w-80 skill-bar"></div>
+        </div>
+      </div>
+
+      <div class="skill-card col-md-6 bg-gray-800/50 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg hover:scale-105 hover:shadow-indigo-400/40 transition-all cursor-pointer">
+        <div class="text-5xl mb-4 text-indigo-400">
+          <i class="fa-brands fa-gsap"></i> <!-- If no FA icon, use generic -->
+        </div>
+        <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">GSAP</h3>
+        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+          <div class="h-2 bg-indigo-500 rounded-full w-80 skill-bar"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- GSAP Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray('.skill-card').forEach((card, index) => {
+    const bar = card.querySelector('.skill-bar');
+
+    // Animate card entry
+    gsap.from(card, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      delay: index * 0.2,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: card,
+        start: "top 90%"
+      }
+    });
+
+    // Animate progress bar
+    gsap.fromTo(bar, 
+      { width: '0%' }, 
+      { width: bar.style.width, duration: 1.5, delay: 0.3 + index * 0.2, ease: "power3.out", scrollTrigger: {
+        trigger: card,
+        start: "top 90%"
+      }}
+    );
+  });
+</script>
+
+<!-- Font Awesome CDN for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<!-- GSAP Animation for Skills -->
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-gray-900">
+  <div class="container mx-auto px-6 md:px-12 lg:px-20">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-center bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent mb-12">
+      Contact Me
+    </h2>
+
+    <div class="max-w-3xl mx-auto">
+      <form class="space-y-6" action="{% url 'saveform' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="Name" placeholder="Your Name" class="w-full px-5 py-3 rounded-xl bg-gray-800 border border-gray-700 focus:border-indigo-400 focus:outline-none transition"/>
+        <input type="email" name="Email" placeholder="Your Email" class="w-full px-5 py-3 rounded-xl bg-gray-800 border border-gray-700 focus:border-indigo-400 focus:outline-none transition"/>
+        <textarea name="Subject" placeholder="Your Message" rows="5" class="w-full px-5 py-3 rounded-xl bg-gray-800 border border-gray-700 focus:border-indigo-400 focus:outline-none transition"></textarea>
+        <button type="submit" class="px-6 py-3 rounded-2xl bg-gradient-to-r from-indigo-500 to-pink-500 hover:scale-105 transition shadow-lg shadow-indigo-500/30 font-semibold w-full">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- GSAP Scroll Animations for Services, Portfolio, Contact -->
+<script>
+ 
+
+
+  // Contact Form
+  gsap.from('#contact form', {
+    y: 50,
+    opacity: 0,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: '#contact',
+      start: "top 90%",
+    }
+  });
+</script>
+
+
+
+  <!-- Gradient Animation CSS -->
+  <style>
+    .animate-gradient {
+      background-size: 300% 300%;
+      animation: gradientShift 6s ease infinite;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+
+
+  <!-- GSAP Animations -->
+  <script>
+    gsap.fromTo("#welcome",
+      { y: -80, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.5, ease: "power4.out" }
+    );
+
+    gsap.fromTo("#tagline",
+      { y: 60, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.5, delay: 0.8, ease: "power4.out" }
+    );
+
+    gsap.from(".absolute", {
+      y: 40,
+      opacity: 0.5,
+      repeat: -1,
+      yoyo: true,
+      duration: 4,
+      ease: "sine.inOut",
+      stagger: 1
+    });
+
+    // About Section Animations
+    gsap.fromTo("#about-img",
+      { x: -100, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1.5, ease: "power3.out", scrollTrigger: { trigger: "#about", start: "top 80%" } }
+    );
+
+    gsap.fromTo("#about-text",
+      { x: 100, opacity: 0 },
+      { x: 0, opacity: 1, duration: 1.5, delay: 0.3, ease: "power3.out", scrollTrigger: { trigger: "#about", start: "top 80%" } }
+    );
+  </script>
+
+  <!-- ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+  </script>
+
+</body>
+</html>
