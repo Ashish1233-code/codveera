@@ -1,4 +1,4 @@
-https://github.com/Ashish1233-code/codveera/settings"""
+"""
 URL configuration for codveera project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
