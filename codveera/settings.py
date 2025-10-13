@@ -66,4 +66,4 @@ DATABASES = {
 }
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles' setting barobar aahe na 
+STATIC_ROOT = BASE_DIR / 'staticfiles' 
